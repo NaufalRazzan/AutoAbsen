@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CekAbsensi"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/cekLayout">
+
+    <EditText
+        android:id="@+id/personName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        android:ems="10"
+        android:clickable="true"
+        android:hint="Enter Name Here"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_datePicker"
+        android:layout_width="206dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="36dp"
+        android:clickable="true"
+        android:ems="10"
+        android:hint="Select Date Here"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personName" />
+
+    <Button
+        android:id="@+id/find"
+        android:layout_width="116dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="72dp"
+        android:text="FIND"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_datePicker" />
+
+    <TextView
+        android:id="@+id/viewName"
+        android:layout_width="365dp"
+        android:layout_height="28dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:background="@color/white"
+        android:layout_marginBottom="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/viewHours"
+        android:layout_width="362dp"
+        android:layout_height="33dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewName"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <TextView
+        android:id="@+id/isPresent"
+        android:layout_width="363dp"
+        android:layout_height="30dp"
+        android:textColor="#00FF00"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHours"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/isAbsent"
+        android:layout_width="363dp"
+        android:layout_height="30dp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHours"
+        app:layout_constraintVertical_bias="0.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
